@@ -15,20 +15,55 @@
 </head>
 <body>
 	<header>
-		<div class="header_title">Бусынкин Максим</div>
-		<div class="header_slogan">Верстка сайтов на HTML и CSS<br>HTML5 CSS3 JavaScript jQuery</div>
-		<div class="header_arrow">
-			<i class="fa fa-chevron-down" aria-hidden="true"></i>
+		<div class="container">
+			<nav class="">
+				<ul class="top-menu">
+					<li><a href="#resume">Резюме</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header_title">Бусынкин Максим</div>
+			<div class="header_slogan">Верстка сайтов на HTML и CSS<br>HTML5 CSS3 JavaScript jQuery</div>
+			<div class="header_arrow">
+				<i class="fa fa-chevron-down" aria-hidden="true"></i>
+			</div>
 		</div>
 	</header>
 
+	<section class="resume" id="resume">
+		<div class="container">
+			<div class="title">Резюме</div>
+			<div class="row">
+				<img src="img/сертификат.png" width="300" height="440" alt="сертификат">
+				<div class="resume-info">
+					<div class="title">
+						Основные навыки:
+					</div>
+					<div class="resume-list">
+						<ul>
+							<li>Владение HTML5 и CSS3</li>
+							<li>Мобильная, адаптивная, кроссбраузерная верстка</li>
+							<li>Умение разбираться в чужом коде</li>
+							<li>Знание Adobe Photoshop и Avocode для работы с макетами</li>
+							<li>Контроль версий, работа с Git, GitHub</li>
+							<li>Основы JavaScript, jQuery</li>
+							<li>Работа с пакетными менеджерами: npm.</li>
+							<li>Автоматизация сборки проекта: Gulp</li>
+							<li>Препроцессоры: SASS</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
 	<!-- PORTFOLIO -->
 
-	<div class="portfolio">
+	<div class="portfolio" id="portfolio">
 		<div class="container">
-			<div class="title">
-				Портфолио
-			</div>
+			<div class="title">Портфолио</div>
 			<div class="row">
 				<div class="col-4">
 					<div class="portfolio-item">
@@ -115,7 +150,7 @@
 
 					<!--  FOOTER  -->
 
-	<footer>
+	<footer id="contacts">
 		<div class="container">
 			<div class="row-footer">
 				<div class="col-4">

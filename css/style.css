@@ -1,7 +1,8 @@
 html {
 	font-family: 'PT Sans Caption', sans-serif;
 	font-size: 16px;
-	line-height: 1.5;				
+	line-height: 1.5;
+	margin: 0;			
 }
 
 img {
@@ -18,7 +19,7 @@ img {
 
 .row {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
@@ -29,6 +30,7 @@ img {
 
 
 header {
+	
 	background: #343c4e;
 	background-image: url("../img/bg-header.jpg");
 	background-repeat: no-repeat;
@@ -37,18 +39,38 @@ header {
 	height: 100vh;
 	color: #fff;
 	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
 }
+
+.top-menu {
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+}
+
+.top-menu li {
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.top-menu li a {
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.top-menu li a:hover {
+	color: yellow;
+}
+
 .header_title {
 	font-size: 56px;
 	line-height: 62px;
+	margin-top: 150px;
 	margin-bottom: 30px;
 	font-family: 'Merriweather', serif;
-	margin-top: -50px;
+
+	
 }
 
 .header_slogan {
@@ -64,6 +86,11 @@ header {
 	margin-left: -30px;
 }
 
+.resume {
+	background-color: #fafafa;
+	padding: 50px;
+}
+
 /*  PORTFOLIO  */
 
 .row .col-4:hover {
@@ -73,6 +100,8 @@ header {
 .portfolio {
 	padding-top: 70px;
 	padding-bottom: 100px;
+	background-color: #f6f6f6;
+
 }
 
 .portfolio-item {
@@ -80,9 +109,9 @@ header {
 }
 
 .title {
-	font-size: 46px;
+	font-size: 40px;
 	margin-bottom: 60px;
-	font-family: 'Merriweather', serif;
+	font-family: 'Merriweather' sans-serif;
 	text-align: center;
 }
 
