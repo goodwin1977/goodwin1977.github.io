@@ -182,9 +182,31 @@ p.footer-name {
 .footer-info {
 	color: #647aa2;
 	font-family: "PT Sans - Caption";
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 24px;
+	padding: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.mail-icon {
+	width: 40px;
+	height: 26px;
+	background-image: url('../img/mail.png');
+	background-repeat: no-repeat;
+	padding-right: 50px;
+	padding-bottom: 7px;
+}
+
+.phone-icon {
+	width: 40px;
+	height: 32px;
+	background-image: url('../img/telephone.png');
+	background-repeat: no-repeat;
+	padding-right: 50px;
+	padding-bottom: 12px;
 }
 
 p.footer-social-icons {
