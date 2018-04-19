@@ -186,28 +186,42 @@ p.footer-name {
 	font-weight: 400;
 	line-height: 24px;
 	padding: 10px;
-	display: inline-block;
-	vertical-align: middle;
 }
 
 
 .mail-icon {
 	width: 40px;
 	height: 26px;
-	background-image: url('../img/mail.png');
+	background-image: url('../img/001-back.png');
 	background-repeat: no-repeat;
-	padding-right: 50px;
+	padding-right: 10px;
 	padding-bottom: 7px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .phone-icon {
 	width: 40px;
 	height: 32px;
-	background-image: url('../img/telephone.png');
+	background-image: url('../img/002-technology.png');
 	background-repeat: no-repeat;
-	padding-right: 50px;
+	padding-right: 10px;
 	padding-bottom: 12px;
+	display: inline-block;
+	vertical-align: middle;
 }
+
+.scype {
+	width: 40px;
+	height: 26px;
+	background-image: url('../img/003-application.png');
+	background-repeat: no-repeat;
+	padding-right: 10px;
+	padding-bottom: 7px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 
 p.footer-social-icons {
 	color: #fff;
