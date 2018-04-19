@@ -178,20 +178,29 @@ section h2 {
 	text-align: center;
 }
 
+.image img {
+	margin: 0 auto;
+}
+
 .pet {
-	width: 270px;
+	max-width: 270px;
+	height: 425px;
 	background-color: #fafafa;
 	text-align: center;
 	margin-right: 20px;
 	margin-left: 20px;
 	border-radius: 10px;
+	position: relative;
 }
 
 .pet:hover {
 	 box-shadow: 0 14px 14px rgba(41, 52, 73, 0.5);
 }
+.slick-track {
+	height: 455px;
+}
 
-.left {
+/*.left {
 	width: 15px;
 	height: 7px;
 	background-image: url('../img/long-left-arrow.png');
@@ -201,7 +210,9 @@ section h2 {
 	border: 2px solid #f1cdb3;
 	border-radius: 50%;
 	cursor: pointer;
-}
+} */
+
+
 
 .left:hover {
 	background-color: #f1cdb3;
@@ -235,12 +246,14 @@ section h2 {
 	padding-bottom: 24px;
 }
 
-.slider {
+/*.slider {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap; */
+
 }
+
 
 .help {
 	background-color: #fafafa;
@@ -621,4 +634,5 @@ footer h3 {
 .slider-catalog .pet {
 	margin: 0;
 	margin-bottom: 35px;
+	flex-basis: 270px;
 }

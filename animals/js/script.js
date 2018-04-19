@@ -1,3 +1,4 @@
+
 var Link = document.querySelector(".learn-more");
 var Popup = document.querySelector(".modal-pet");
 var Close = Popup.querySelector(".modal-close");
@@ -74,3 +75,13 @@ var Close = Popup.querySelector(".modal-close");
       }
     }
   });
+
+  $('.slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerMode: true,
+  centerPadding: '100px'
+  });
+
+ 
