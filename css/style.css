@@ -148,7 +148,7 @@ header {
 	padding: 0;
 }
 
-iframe {
+.map-iframe {
 	box-sizing: border-box;
 	border: none;
 	width: 100%;
