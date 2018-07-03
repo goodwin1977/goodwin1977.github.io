@@ -143,9 +143,17 @@ header {
 	padding-left: 10px;
 }
 
+.mymap {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	
+}
+
 /*   FOOTER   */
 
 footer {
+	margin: 0;
 	background-color: #061634;
 	color: :#6479a2;
 	padding-top: 90px;
