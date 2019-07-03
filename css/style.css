@@ -23,9 +23,10 @@ img {
 	flex-wrap: wrap;
 }
 
-.col-4 {
+.row .col-4 {
 	width: 360px;
 	margin-bottom: 50px;
+	transition: all 0.4s;
 }
 
 
