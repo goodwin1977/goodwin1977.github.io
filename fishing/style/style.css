@@ -230,15 +230,15 @@ header {
     /* margin-left: 70px; */
 }
 .refer {
-    background-image: url(/image/refer.png);
+    background-image: url(../image/refer.png);
 }
 .heart {
-    background-image: url(/image/heart.png);
+    background-image: url(../image/heart.png);
     margin-left: 70px;
     margin-right: 70px;
 }
 .cart {
-    background-image: url(/image/cart.png);
+    background-image: url(../image/cart.png);
     margin-right: 22px;
 }
 
@@ -303,7 +303,7 @@ header {
     content: '';
     width: 11px;
     height: 6px;
-    background-image: url(/image/arrow.png);
+    background-image: url(../image/arrow.png);
     background-size: cover;
     background-position: center;
     top: 10px;
@@ -314,7 +314,7 @@ header {
     content: '';
     width: 25px;
     height: 18px;
-    background-image: url(/image/menu-burger.png);
+    background-image: url(../image/menu-burger.png);
     top: 3px;
     left: -38px;
 }
