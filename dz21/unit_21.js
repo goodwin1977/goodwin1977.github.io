@@ -88,9 +88,10 @@ div8.addEventListener('touchend', t8);
 /* Дан блок div-9. Добавьте событие ontouch. Выводите количество одновременных касаний в out-9. */
 let div9 = document.querySelector('.div-9');
 function t9(e) {
-    let touchlist = e.changedTouches;    
+    let touchlist = e.changedTouches; 
+    //console.log(touchlist.length);   
     let out = '';
-    out = 'radiusY: ' + TouchList.length;
+    out = touchlist.length;
     document.querySelector('.out-9').innerHTML = out;
  }
 
