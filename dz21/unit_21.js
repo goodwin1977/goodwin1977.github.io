@@ -90,7 +90,7 @@ let div9 = document.querySelector('.div-9');
 function t9(e) {
     let touchlist = e.changedTouches;    
     let out = '';
-    out += 'radiusY: ' + TouchList.length;
+    out = 'radiusY: ' + TouchList.length;
     document.querySelector('.out-9').innerHTML = out;
  }
 
