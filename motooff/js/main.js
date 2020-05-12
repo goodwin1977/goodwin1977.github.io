@@ -68,7 +68,7 @@ $(document).ready(function(){
   });
 
   $('.hamburger').on('click', function() {
-    $('.menu__mobile').toggleClass('show-mobile__menu');
+    $('.menu__mobile').toggleClass('active');
     $('.header__info-search').toggleClass('show-search');
   })
 
