@@ -1773,6 +1773,9 @@ footer .footer__contacts {
   .products h2, .brands h2 {
     font-size: 30px !important;
   }
+  .products__slider-slide {
+    margin: 0 auto;
+  }
   .brands h2::after {
     right: 15px !important;
   }
@@ -1781,6 +1784,10 @@ footer .footer__contacts {
   }
   .questions {
     padding-top: 70px !important;
+  }
+  .questions__box {
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .footer__box-wrapper,
   .footer__contacts {
@@ -1831,10 +1838,6 @@ footer .footer__contacts {
   }
   .percent {
     margin-top: 70px;
-  }
-  .questions__box {
-    padding-right: 10px;
-    padding-left: 10px;
   }
 }
 

@@ -41,7 +41,8 @@ $(document).ready(function(){
       {
         breakpoint: 700,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1
+          // centerMode: true
         }
       }
     ]
