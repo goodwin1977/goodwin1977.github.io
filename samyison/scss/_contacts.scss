@@ -1,0 +1,117 @@
+.contacts {
+  .contacts_title {
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 160%;
+    color: $main_color;
+    text-align: center;
+  }
+  .contacts_subtitle {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 170%;
+    text-align: center;
+    color: $main_color;
+  }
+  .quest {
+    width: 205px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: $main_color;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 40px auto 70px auto;
+    &:hover {
+      color: $main_color;
+      border:1px solid $main_color;
+      background-color: #FFFFFF;
+    }
+  }
+  .contact-block {
+
+  }
+  .requisites_title {
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+  .requisites {
+    margin-bottom: 150px;
+    .payments-list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .payments {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #fbfbfb;
+        margin-left: 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    .requisites-info p {
+      font-size: 16px;
+      line-height: 180%;
+      color: $main_color;
+      font-weight: normal;
+      margin-bottom: 0;
+    } 
+  }
+  .contact-block {
+    padding-left: 45px;
+    .contact-block_title {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 160%;
+      color: #adadad;
+      // opacity: 0.6;
+      margin-bottom: 15px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 24px;
+        left: -40px;
+        background-repeat: no-repeat; 
+      }
+      &.address {
+        &::before {
+          background-image: url(../images/map-pin.png);
+        }        
+      }
+      &.phone {
+        &::before {
+          background-image: url(../images/phone.png);
+        }        
+      }
+      &.mail {
+        &::before {
+          background-image: url(../images/at-sign.png);
+        }        
+      }
+      &.socnet {
+        &::before {
+          background-image: url(../images/soc-layout.png);
+        }        
+      }
+    }
+    .contact-block_info,
+    .contact-block_info a {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 160%;
+      color: #1F1F1F;
+    }
+    .contact-block_info a:hover {
+      text-decoration: underline;
+    }
+  }
+}

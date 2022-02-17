@@ -1,0 +1,19 @@
+/* DELIVERY */
+
+.delivery {
+  padding-top: 100px;
+  padding-bottom: 75px;
+  .delivery-info_title {
+    font-weight: 450;
+    font-size: 40px;
+    line-height: 160%;
+    color: $main_color;
+    margin-bottom: 50px;
+  }
+  .delivery-info_text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 170%;
+    color: $main_color;
+  }
+}

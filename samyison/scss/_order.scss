@@ -1,0 +1,202 @@
+/*  ORDER  */
+
+.order {
+  .order_title {
+    font-size: 40px;
+    line-height: 160%;
+    color: $main_color;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .order_title-block {
+    font-size: 24px;
+    line-height: 150%;
+    color: #1B1918;
+    margin-bottom: 30px;
+  }
+  .basket {
+    .basket_title-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      font-size: 24px;
+      line-height: 150%;
+      color: $main_color;
+      font-weight: 500;
+      .changeBasket {
+        width: 160px;
+        height: 60px;
+        border: 1px solid $main_color;
+        box-sizing: border-box;
+        border-radius: 30px;
+        font-size: 20px;
+        line-height: 26px;
+        color: $main_color;
+      }   
+    }
+    .basket_items-list {
+      border-bottom: none;
+      margin-bottom: 150px;
+    }   
+  }
+  .order_information {
+    .order_info-title {
+      font-size: 24px;
+      line-height: 150%;
+      color: $main_color;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+    .order_info-block {
+      border-bottom: 1px solid $main_color;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      .all_products {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 170%;
+        color: $main_color;
+        .sum {
+          text-transform: uppercase;
+        }
+      }
+    }
+    .result_order {
+      font-size: 18px;
+      line-height: 170%;
+      color: $main_color;
+      text-align: right;
+    }
+    .order {
+      background-color: $main_color;
+      font-size: 20px;
+      line-height: 26px;
+      color: #FFFFFF;
+      border-radius: 30px;
+      height: 60px;
+      &:hover {
+        color: $main_color;
+      border: 1px solid $main_color;
+      background-color: #fff;
+      }
+    }
+    .cartLook {
+      border-radius: 30px;
+      height: 60px;
+      font-size: 20px;
+      line-height: 26px;
+      color: $main_color;
+      border: 1px solid $main_color;
+      &:hover {
+        color: #FFFFFF;
+      background-color: $main_color;
+      }
+    }
+  }
+  .person,
+  .order_address {
+    margin-bottom: 60px;
+    label {
+      font-size: 18px;
+      line-height: 120%;
+      color: #242424;
+    }
+    .form-control {
+      background: #F9F9F9;
+      border-radius: 6px;
+      height: 54px;
+      border: none;
+      outline: none;      
+    }
+    input::placeholder {
+      font-size: 18px;
+      line-height: 120%;
+      color: $main_color;
+      opacity: 0.5;
+    }
+  }
+  .order_delivery,
+  .order_payment {
+    margin-bottom: 40px;
+    .order_delivery-wrap,
+    .order_payment-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+    .way_delivery,
+    .payment_method {
+      width: 305px;
+      height: 148px;
+      border: 1px solid rgba(20,22,36, 0.05);
+      box-sizing: border-box;
+      border-radius: 6px;
+      padding: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      label {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 160%;
+        color: #242424;
+        // padding-left: 30px;
+        &::before {
+          content: '';
+          display: block;
+          width: 16px;
+          height: 16px;
+          background: #EBEBEB;
+          border-radius: 50%;
+          vertical-align: middle;
+          margin-bottom: 25px;
+          // margin-right: 12px;
+          // margin-left: -30px;
+          // transition: .2s;
+          
+        }
+      }
+      input[type=checkbox] {
+        display: none;
+        &:checked +label::before {
+          background: $main_color;
+          background-image: url(../images/checked-icon.svg);
+          background-repeat: no-repeat;
+          background-size: 65%;
+          background-position: center center;        
+        }
+      }
+      .data {
+        display: block;
+        font-size: 16px;
+        line-height: 150%;
+        color: #8C8E8E;
+      }
+      &.way_delivery-active {
+        border: 1px solid rgba(20,22,36, 1);
+      }
+    }
+  }
+
+  .comment_order {
+    padding-bottom: 50px;
+    margin-bottom: 70px;
+    border-bottom: 1px solid #E6E6E6;
+    textarea {
+      background: #F9F9F9;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      line-height: 120%;
+      color: $main_color;
+      opacity: 0.5;
+      height: 252px;
+      padding: 20px;
+    }
+  }
+}

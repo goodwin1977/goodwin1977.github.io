@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAMYISON</title>
+  <link rel="stylesheet" href="libs/bootstrap-4.6/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick/slick-theme.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="header-top_menu-overlay" id="header-top_menu-overlay">
+      <div class="container">
+        <div class="header-top_menu">
+          <div class="logo">
+            <a href="#">
+              <svg width="159" height="19" viewBox="0 0 159 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.44687 3.67691L8.02864 4.63202C7.77224 4.12589 7.45974 3.71773 7.09116 3.40753C6.61041 3.03202 6.00946 2.84426 5.28832 2.84426C4.48706 2.84426 3.83804 3.08099 3.34126 3.55446C2.84448 4.01161 2.59609 4.61569 2.59609 5.36671C2.59609 5.92181 2.7964 6.39528 3.19703 6.78712C3.51754 7.11365 4.07842 7.4565 4.87968 7.81569L6.4181 8.5014C7.55589 9.00753 8.38119 9.52181 8.894 10.0443C9.66321 10.8279 10.0478 11.8157 10.0478 13.0075C10.0478 14.4932 9.56706 15.7014 8.60555 16.632C7.64403 17.5626 6.43413 18.0279 4.97583 18.0279C3.53356 18.0279 2.37173 17.5871 1.49035 16.7055C0.769211 15.9871 0.272429 15.0239 0 13.8157L1.73072 13.3259C1.8429 14.1422 2.16341 14.8361 2.69224 15.4075C3.28517 16.0116 4.05438 16.3136 4.99987 16.3136C6.02549 16.3136 6.81873 16.0034 7.37962 15.383C7.9405 14.7463 8.22094 13.979 8.22094 13.081C8.22094 12.2973 7.95653 11.6606 7.42769 11.1708C7.12321 10.8769 6.4822 10.5014 5.50467 10.0443L4.0624 9.35855C3.08486 8.9014 2.37173 8.45242 1.92303 8.01161C1.18587 7.29324 0.817287 6.40344 0.817287 5.34222C0.817287 4.08508 1.23394 3.07283 2.06725 2.30548C2.91659 1.52181 3.99829 1.12997 5.31236 1.12997C6.30593 1.12997 7.16328 1.37487 7.88441 1.86467C8.54145 2.30548 9.06227 2.90957 9.44687 3.67691Z" />
+                <path
+                  d="M30.6381 17.7341L28.7632 13.13H21.9364L20.0134 17.7341H18.0423L25.4219 0.615688L32.6092 17.7341H30.6381ZM22.6335 11.4157H28.0661L25.3738 4.87691L22.6335 11.4157Z" />
+                <path
+                  d="M42.7549 17.7341H40.928L43.5962 0.493239L49.7499 14.281L56.0238 0.46875L58.5237 17.7341H56.6968L55.1824 6.37079L49.7258 18.4198L44.3414 6.37079L42.7549 17.7341Z" />
+                <path d="M68.8427 1.39936H70.6215V17.7341H68.8427V1.39936Z" />
+                <path
+                  d="M84.758 17.7341V10.7055L79.4937 1.39936H81.561L85.6474 8.69732L89.7819 1.39936H91.8492L86.5368 10.7055V17.7341H84.758Z" />
+                <path
+                  d="M108.556 3.67691L107.138 4.63202C106.881 4.12589 106.569 3.71773 106.2 3.40753C105.72 3.03202 105.119 2.84426 104.397 2.84426C103.596 2.84426 102.947 3.08099 102.45 3.55446C101.954 4.01161 101.705 4.61569 101.705 5.36671C101.705 5.92181 101.906 6.39528 102.306 6.78712C102.627 7.11365 103.188 7.4565 103.989 7.81569L105.527 8.5014C106.665 9.00753 107.49 9.52181 108.003 10.0443C108.772 10.8279 109.157 11.8157 109.157 13.0075C109.157 14.4932 108.676 15.7014 107.715 16.632C106.753 17.5626 105.543 18.0279 104.085 18.0279C102.643 18.0279 101.481 17.5871 100.599 16.7055C99.8783 15.9871 99.3816 15.0239 99.1091 13.8157L100.84 13.3259C100.952 14.1422 101.273 14.8361 101.801 15.4075C102.394 16.0116 103.164 16.3136 104.109 16.3136C105.135 16.3136 105.928 16.0034 106.489 15.383C107.05 14.7463 107.33 13.979 107.33 13.081C107.33 12.2973 107.066 11.6606 106.537 11.1708C106.232 10.8769 105.591 10.5014 104.614 10.0443L103.172 9.35855C102.194 8.9014 101.481 8.45242 101.032 8.01161C100.295 7.29324 99.9264 6.40344 99.9264 5.34222C99.9264 4.08508 100.343 3.07283 101.176 2.30548C102.026 1.52181 103.107 1.12997 104.422 1.12997C105.415 1.12997 106.272 1.37487 106.994 1.86467C107.651 2.30548 108.171 2.90957 108.556 3.67691Z" />
+                <path
+                  d="M132.415 15.6034C130.813 17.2198 128.842 18.0279 126.502 18.0279C124.162 18.0279 122.183 17.2198 120.565 15.6034C118.962 13.9871 118.161 11.979 118.161 9.57895C118.161 7.16263 118.97 5.15446 120.589 3.55446C122.207 1.93814 124.178 1.12997 126.502 1.12997C128.826 1.12997 130.797 1.93814 132.415 3.55446C134.034 5.15446 134.843 7.16263 134.843 9.57895C134.843 11.979 134.034 13.9871 132.415 15.6034ZM131.117 4.80344C129.851 3.49732 128.313 2.84426 126.502 2.84426C124.691 2.84426 123.153 3.49732 121.887 4.80344C120.621 6.10957 119.988 7.7014 119.988 9.57895C119.988 11.4565 120.621 13.0483 121.887 14.3545C123.153 15.6606 124.691 16.3136 126.502 16.3136C128.313 16.3136 129.851 15.6606 131.117 14.3545C132.383 13.0483 133.016 11.4565 133.016 9.57895C133.016 7.7014 132.383 6.10957 131.117 4.80344Z" />
+                <path d="M146.5 17.7341H144.722V0.713648L157.221 14.0606V1.39936H159V18.4688L146.5 5.12181V17.7341Z" />
+              </svg>
+
+            </a>
+          </div>
+          <div class="search">
+            <form action="" class="header-search_form">
+              <input type="text" placeholder="Поиск">
+              <button></button>
+            </form>
+          </div>
+          <div class="header-top_right-block">
+            <a href="tel:+79222220097" class="header_phone">
+              <span class="mobile-phone">
+                <!-- <img src="images/phone-icon.png" alt=""> -->
+                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.312 13.9706C8.37834 13.8318 7.49083 13.4656 6.72399 12.9026C5.83534 12.2685 5.01902 11.5341 4.29038 10.7133C3.39537 9.73348 2.48397 8.76624 1.69417 7.68561C1.07245 6.81775 0.51631 5.9079 0.212963 4.86227C0.00201657 4.19746 -0.0532189 3.49112 0.0517245 2.8004C0.188367 1.97593 0.614693 1.30544 1.19816 0.744125C1.4388 0.523666 1.70015 0.328145 1.97839 0.160419C2.14403 0.0526226 2.33687 -0.00310078 2.53308 0.000133186C2.7293 0.00336715 2.92029 0.0654168 3.08246 0.178616C3.85935 0.652212 4.4548 1.3837 4.77 2.25168C4.82404 2.37397 4.84507 2.50886 4.83089 2.64231C4.81671 2.77575 4.76784 2.90285 4.68938 3.01036C4.49398 3.28052 4.29038 3.54368 4.09362 3.81383C3.92008 4.05319 3.73971 4.28836 3.58531 4.54032C3.50582 4.65511 3.4637 4.79265 3.46493 4.93339C3.46615 5.07412 3.51067 5.21087 3.59214 5.32419C3.98157 5.8841 4.3587 6.46081 4.7823 6.99412C5.54874 7.96604 6.39739 8.86679 7.31839 9.68589C7.52335 9.86646 7.74334 10.026 7.96197 10.1898C8.0551 10.264 8.16705 10.3092 8.28452 10.3201C8.40199 10.331 8.52006 10.3072 8.62469 10.2514C8.85898 10.1331 9.08703 10.0023 9.30791 9.85946C9.61399 9.6593 9.9146 9.45353 10.2152 9.25616C10.3391 9.17492 10.4826 9.13036 10.6297 9.12739C10.7768 9.12443 10.9218 9.16318 11.0487 9.23936C11.824 9.6334 12.456 10.271 12.8524 11.0591C12.9639 11.2559 13.0141 11.4828 12.9966 11.7096C12.979 11.9364 12.8944 12.1523 12.754 12.3287C11.9984 13.3449 11.0323 13.972 9.7479 14C9.6022 13.9978 9.45672 13.988 9.312 13.9706Z" />
+                  </svg>
+              </span>
+              <span class="phone_num">+7 922 222 00 97</span>
+            </a>
+            <a href="cart.html" class="cart_button btn">Корзина <span>(0)</span></a>
+            <div class="header-burger_menu">
+              <div class="header-burger_button">
+                <span></span>
+              </div>
+              <nav class="burger-menu_nav">
+                <a href="#" class="burger-menu_link menu_link-active">Главная</a>
+                <a href="catalog.html" class="burger-menu_link">Каталог товаров</a>
+                <a href="#" class="burger-menu_link">Гарантия и возврат</a>
+                <a href="delivery.html" class="burger-menu_link">Доставка и оплата</a>
+                <a href="#" class="burger-menu_link">Как оформить заказ</a>
+                <a href="delivery.html" class="burger-menu_link">Условия доставки</a>
+                <a href="faq.html" class="burger-menu_link">Вопрос-ответ (FAQ)</a>
+                <a href="contacts.html" class="burger-menu_link">Контакты</a>
+                <div class="contacts-block">
+                  <a href="tel:+79222220097" class="burger-menu_phone">+7 922 222 00 97</a>
+                  <a href="" class="burger-menu_email" data-toggle="modal" data-target="#exampleModal2">Написать нам</a>
+                  <div class="burger-social_wrap">
+                    <a href="#" class="burger-menu_social">Instagram </a>/
+                    <a href="#" class="burger-menu_social">Ozon </a>/
+                    <a href="#" class="burger-menu_social">Wildberries</a>
+                  </div>
+                  <div class="policy">
+                    <a href="#" class="burger-menu_link">Политика конфиденциальности</a>
+                    <a href="#" class="burger-menu_link">Оферта</a>
+                  </div>
+                </div>
+              </nav>
+              <div class="burger-menu_overlay"></div>
+            </div>
+            <div class="menu">Меню</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="banner-wrapper">
+      <div class="row">
+        <div class="col-md-12 col-lg-9">
+          <div class="main-info">
+            <h1 class="main-title">ДОМАШНИЙ ТЕКСТИЛЬ</h1>
+            <p class="main-subtitle">Оптовая и розничная продажа текстильной продукции двухсторонних<br>дизайнов:
+              наволочки, пододеяльники, простыни. </p>
+            <a href="catalog.html" class="cat-link btn">Каталог</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="categories">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-4">
+          <div class="card">
+            <a href="#">
+              <img src="images/textile.png" class="card-img-top" alt="textile">
+              <div class="card-body">
+                <h5 class="card-title">Домашний текстиль</h5>
+                <p class="card-text">Оптовая и розничная продажа текстильной продукции двухсторонних дизайнов:
+                  наволочки,
+                  пододеяльники, простыни. </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="#">
+              <img src="images/cloth.png" class="card-img-top" alt="cloth">
+              <div class="card-body">
+                <h5 class="card-title">Ткани</h5>
+                <p class="card-text">Оптовая и розничная продажа текстильной продукции двухсторонних дизайнов:
+                  наволочки, пододеяльники, простыни.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <a href="#">
+              <img src="images/byrysh.png" class="card-img-top" alt="byrysh">
+              <div class="card-body">
+                <h5 class="card-title">TM ByRysh</h5>
+                <p class="card-text">Оптовая и розничная продажа текстильной продукции двухсторонних дизайнов:
+                  наволочки, пододеяльники, простыни.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-12 col-lg-6">
+          <img src="images/about_image.png" alt="about_image" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="about-info">
+            <h3 class="about-info_title">Оптовая и розничная продажа текстильной продукции двухсторонних дизайнов:
+              наволочки, пододеяльники, простыни.</h3>
+            <p class="about-info_subtitle">Удобная концепция двухсторонних дизайнов наволочек и пододеяльников порадует
+              вас своей универсальностью и стилем. Стоит просто перевернуть изделие!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="container">
+      <h2 class="catalog-title">Каталог товаров</h2>
+      <div class="catalog-nav controls">
+        <ul class="nav-list">
+          <!-- <li data-filter="all">Все</li> -->
+          <li data-filter=".textile">Домашний текстиль</li>
+          <li data-filter=".cloth">Ткани</li>
+          <li data-filter=".clothes">Одежда</li>
+        </ul>
+        <div class="allCatalog" data-filter="all">Смотреть все</div>
+      </div>
+      <div class="row container-filter">
+        <div class="mix textile col-12 col-sm-6 col-lg-4">
+          <a href="" class="viewcard" data-toggle="modal" data-target="#exampleModal3">
+            <div class="product">
+              <div class="img-wrap">
+                <img src="images/product-1.png" class="card-img-top img-fluid" alt="textile">
+                <div class="toCardBtn">Добавить в корзину</div>
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Укрывало универсальное (беспододеяльное), стеганое, однотонное</h5>
+                <div class="prices">
+                  <div class="price">2288 р.</div>
+                  <div class="old-price">3288 р.</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="mix cloth col-12 col-sm-6 col-lg-4">
+          <a href="#" class="viewcard">
+            <div class="product">
+              <div class="img-wrap">
+                <img src="images/product-2.png" class="card-img-top img-fluid" alt="textile">
+                <div href="#" class="toCardBtn">Добавить в корзину</div>
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Укрывало универсальное (беспододеяльное), стеганое, однотонное</h5>
+                <div class="prices">
+                  <div class="price">2288 р.</div>
+                  <div class="old-price">3288 р.</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="mix textile col-12 col-sm-6 col-lg-4">
+          <a href="#" class="viewcard">
+            <div class="product">
+              <div class="img-wrap">
+                <img src="images/product-3.png" class="card-img-top img-fluid" alt="textile">
+                <div href="#" class="toCardBtn">Добавить в корзину</div>
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Укрывало универсальное (беспододеяльное), стеганое, однотонное</h5>
+                <div class="prices">
+                  <div class="price">2288 р.</div>
+                  <div class="old-price">3288 р.</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="mix clothes col-12 col-sm-6 col-lg-4">
+          <a href="#" class="viewcard">
+            <div class="product">
+              <div class="img-wrap">
+                <img src="images/product-4.png" class="card-img-top img-fluid" alt="textile">
+                <div href="#" class="toCardBtn">Добавить в корзину</div>
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Укрывало универсальное (беспододеяльное), стеганое, однотонное</h5>
+                <div class="prices">
+                  <div class="price">2288 р.</div>
+                  <div class="old-price">3288 р.</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="mix cloth col-12 col-sm-6 col-lg-4">
+          <a href="#" class="viewcard">
+            <div class="product">
+              <div class="img-wrap">
+                <img src="images/product-5.png" class="card-img-top img-fluid" alt="textile">
+                <div href="#" class="toCardBtn">Добавить в корзину</div>
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Укрывало универсальное (беспододеяльное), стеганое, однотонное</h5>
+                <div class="prices">
+                  <div class="price">2288 р.</div>
+                  <div class="old-price">3288 р.</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="mix clothes col-12 col-sm-6 col-lg-4">
+          <a href="#" class="viewcard">
+            <div class="product">
+              <div class="img-wrap">
+                <img src="images/product-6.png" class="card-img-top img-fluid" alt="textile">
+                <div href="#" class="toCardBtn">Добавить в корзину</div>
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Укрывало универсальное (беспододеяльное), стеганое, однотонное</h5>
+                <div class="prices">
+                  <div class="price">2288 р.</div>
+                  <div class="old-price">3288 р.</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-products">
+    <div class="container">
+      <div class="products-slider">
+        <div class="product-item">
+          <img src="images/slide-1.png" alt="">
+          <div class="product-info">
+            <div class="product-info_title">Ткани1</div>
+            <div class="product-info_description">Муслин - это универсальная хлопковая ткань. Из неё можно изготовить
+              все что угодно вашей душе, как для ваших деток, так и для себя. </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <img src="images/slide-1.png" alt="">
+          <div class="product-info">
+            <div class="product-info_title">Ткани2</div>
+            <div class="product-info_description">Муслин - это универсальная хлопковая ткань. Из неё можно изготовить
+              все что угодно вашей душе, как для ваших деток, так и для себя. </div>
+          </div>
+        </div>
+        <div class="product-item">
+          <img src="images/slide-1.png" alt="">
+          <div class="product-info">
+            <div class="product-info_title">Ткани3</div>
+            <div class="product-info_description">Муслин - это универсальная хлопковая ткань. Из неё можно изготовить
+              все что угодно вашей душе, как для ваших деток, так и для себя. </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="social">
+    <div class="container">
+      <h2 class="social-title">Мы в соц. сетях и площадках</h2>
+      <p class="social-subtitle">Муслин - это универсальная хлопковая ткань. Из неё можно изготовить все что
+        угодно<br>вашей душе, как для ваших деток, так и для себя.</p>
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-3">
+          <div class="soc-block">
+            <div class="soc-image insta">
+            </div>
+            <div class="soc-link">
+              Мы в <a href="#">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 mb-3">
+          <div class="soc-block">
+            <div class="soc-image wb">
+            </div>
+            <div class="soc-link">
+              Мы на <a href="#">wildberries</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="soc-block">
+            <div class="soc-image ozon">
+            </div>
+            <div class="soc-link">
+              Мы на <a href="#">ozon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top_wrapper">
+          <div class="footer-top_left">
+            <div class="footer-logo">
+              <a href="#"><img src="images/logo-footer.png" alt="logo-footer"></a>
+            </div>
+            <div class="footer-slogan">Домашний текстиль ТМ “Самый сон”</div>
+          </div>
+          <div class="footer-top_right">
+            <button class="writeToUs btn" data-toggle="modal" data-target="#exampleModal">Написать нам</button>
+            <a href="#" class="up btn"><img src="images/arrow-up.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-lg-3">
+          <div class="footer-menu">
+            <a href="#" class="footer-menu_title">Каталог</a>
+            <ul class="footer-menu_list">
+              <li class="footer-menu_item">
+                <a href="#" class="footer-menu-link">Домашний текстиль</a>
+              </li>
+              <li class="footer-menu_item">
+                <a href="#" class="footer-menu-link">Ткани</a>
+              </li>
+              <li class="footer-menu_item">
+                <a href="#" class="footer-menu-link">Одежда</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <div class="footer-menu">
+            <a href="#" class="footer-menu_title">Компания</a>
+            <ul class="footer-menu_list">
+              <li class="footer-menu_item">
+                <a href="#" class="footer-menu-link">Гарантия и возврат</a>
+              </li>
+              <li class="footer-menu_item">
+                <a href="#" class="footer-menu-link">Доставка и оплата</a>
+              </li>
+              <li class="footer-menu_item">
+                <a href="#" class="footer-menu-link">Как оформить заказ</a>
+              </li>
+              <li class="footer-menu_item">
+                <a href="#" class="footer-menu-link">Условия доставки</a>
+              </li>
+              <li class="footer-menu_item">
+                <a href="faq.html" class="footer-menu-link">Вопрос-ответ (FAQ)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="footer-menu">
+            <a href="#" class="footer-menu_title">Контакты</a>
+            <ul class="footer-menu_list">
+              <li class="footer-menu_item address">
+                Россия, г. Екатеринбург, ул. проспект<br>Космонавтов 258/И
+              </li>
+              <li class="footer-menu_item">
+                <a href="tel:+79222220097" class="footer-menu-link footer-phone">+7 922 222 00 97</a>
+              </li>
+              <li class="footer-menu_item">
+                <a href="mailto:sovrementorg@mail.ru" class="footer-menu-link footer-email">sovrementorg@mail.ru</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-2 inviz">
+          <div class="footer-menu">
+            <a href="#" class="footer-menu_title">СОЦ.СЕТИ</a>
+            <ul class="footer-menu_list">
+              <li class="footer-menu_item">Мы в
+                <a href="#" class="footer-menu-link soc-link">Instagram</a>
+              </li>
+              <li class="footer-menu_item">Мы на
+                <a href="#" class="footer-menu-link soc-link">wildberries</a>
+              </li>
+              <li class="footer-menu_item">Мы на
+                <a href="#" class="footer-menu-link soc-link">ozon</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-2 inviz">
+          <div class="website_development">
+            <a href="#" class="dev">Разработка сайта<br>— Конверсия</a>
+            <a href="#" class="all-contacts">Все контакты</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-mobile">
+        <button class="writeToUs-white btn" data-toggle="modal" data-target="#exampleModal">Написать нам</button>
+        <div class="website_development">
+          <a href="#" class="dev">Разработка сайта — Конверсия</a>
+          <div class="dev">Домашний текстиль ТМ “Самый сон”</div>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="footer-social_link btn">
+            <img src="images/inasta-icon.png" alt="instagram">
+          </a>
+          <a href="#" class="footer-social_link btn">
+            <img src="images/wb-icon.png" alt="wildberries">
+          </a>
+          <a href="#" class="footer-social_link btn">
+            <img src="images/ozon-icon.png" alt="ozon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Modal БЫСТРЫЙ ПРОСМОТР -->
+  <div class="modal fade card-modal" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-lg-6">
+              <div class="product-slider">
+                <div class="product-image">
+                  <img src="images/product-1-1.png" alt="" class="im-fluid">
+                </div>
+                <div class="product-image">
+                  <img src="images/product-1-1.png" alt="" class="im-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-lg-6">
+              <div class="product-description">
+                <h3 class="product_title">Укрывало универсальное (беспододеяльное), стеганое, однотонное</h3>
+                <div class="product_price-block">
+                  <span class="new_price">2288 <span>р.</span></span>
+                  <span class="old_price">3288 <span>р.</span></span>
+                </div>
+                <div class="product-info_description">
+                  <div class="product-info_text">
+                    <p>Укрывало - абсолютно новый ход в развитии индустрии постельных убранств. Универсальность изделия
+                      не
+                      только в том, что укрывало избавит вас от приобретения пододеяльника, одеяла и покрывала, так как
+                      оно
+                      отлично справляется со всеми функциями, но и то, что размер укрывал бренда "Самый Сон" подходит
+                      для
+                      того, чтобы заправить его уже в привычный вам пододеяльник. Все знают, что стирка одеяла из-за его
+                      объема это трудоемкий процесс. Практичность нашего изделия в том, что благодаря специальной
+                      технологии
+                      ультрастеп и дизайну обработки, оно отлично входит в стиральную машину и сэкономит место на
+                      сушильной
+                      поверхности.</p>
+                    <p>Укрывало изготовлено из ткани микросатин - это ткань, сотканная из тонких микроволокон. Ткань не
+                      линяет, не даёт усадку, быстро сохнет. Гарантия 1000 стирок!</p>
+                    <p>Наполнитель укрывала: синтепон, 160гр/м2.</p>
+                  </div>
+                  <a href="#" class="read_more">
+                    Развернуть
+                    <img src="images/arrow-next.svg" alt="">
+                  </a>
+                  <div class="product-sizes">
+                    <div class="product-sizes_title">Размеры укрывала:</div>
+                    <div class="product-sizes_wrap">
+                      <a href="" class="btn size-btn mb-2">1.5 спальный (140 см)</a>
+                      <a href="" class="btn size-btn mb-2 mx-1">2 спальный (172 см)</a>
+                      <a href="" class="btn size-btn mb-2">Евро (200 см)</a><br>
+                      <a href="" class="btn size-btn">Евро макси (240 см)</a>
+                    </div>
+                  </div>
+                  <a href="" class="btn addBasket">Добавить в корзину</a>
+                  <a href="" class="btn learnMore">Узнать больше о товаре</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <!-- Modal ЗАДАТЬ ВОПРОС -->
+  <div class="modal fade writeToUs-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Задать вопрос</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="popup_subtitle">Сообщение получат топ-менеджеры компании, его рассмотрит ответственное подразделение
+          и предоставит ответ.</div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="">Имя:</label>
+              <input type="email" class="form-control" id="" placeholder="Введите фамилию и имя">
+            </div>
+            <div class="form-group">
+              <label for="">E-mail</label>
+              <input type="email" class="form-control" id="" placeholder="Введите E-mail">
+            </div>
+            <div class="form-group">
+              <label for="">Телефон</label>
+              <input type="email" class="form-control" id="" placeholder="Введите телефон">
+            </div>
+            <div class="form-group">
+              <label for="">Сообщение</label>
+              <textarea class="form-control" id="" rows="3">Введите сообщение</textarea>
+            </div>
+            <button type="submit" class="writeToUs-sub mb-3">Задать вопрос</button>
+            <div class="form-check">
+              <input class="" type="checkbox" value="" id="quest1" checked>
+              <label class="" for="quest1">
+                Я согласен с <a href="#">условиями передачи информации</a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <!-- Modal ЗАКАЗАТЬ ЗВОНОК -->
+  <div class="modal fade writeToUs-modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Заказать звонок</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="popup_subtitle">Сообщение получат топ-менеджеры компании, его рассмотрит ответственное подразделение
+          и предоставит ответ.</div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="">Имя:</label>
+              <input type="email" class="form-control" id="" placeholder="Введите фамилию и имя">
+            </div>
+            <div class="form-group">
+              <label for="">E-mail</label>
+              <input type="email" class="form-control" id="" placeholder="Введите E-mail">
+            </div>
+            <div class="form-group">
+              <label for="">Телефон</label>
+              <input type="email" class="form-control" id="" placeholder="Введите телефон">
+            </div>
+            <button type="submit" class="writeToUs-sub mb-3">Заказать звонок</button>
+            <div class="form-check">
+              <input class="" type="checkbox" value="" id="quest1" checked>
+              <label class="" for="quest1">
+                Я согласен с <a href="#">условиями передачи информации</a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="libs/bootstrap-4.6/bootstrap.min.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/mixitup/mixitup.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <script>
+    
+  </script>
+</body>
+
+</html>

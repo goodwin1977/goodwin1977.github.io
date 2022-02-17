@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Топливо</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="libs/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <div class="logo">
+          <a href="#" data-da=".navbar-brand, 991, 0"><img src="./images/logo.png" alt="logo"></a>
+        </div>
+        <div class="header-top__contacts">
+          <div class="header-top__contacts-location">
+            <div class="header-top__contacts-location--icon" data-da=".navbar, 991, 1">
+              <a href="#">
+                <img src="./images/location-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="header-top__contacts-location--address">
+              г. Москва<br>ул. Люберецкий пр-д дом 2
+            </div>
+          </div>
+          <div class="header-top__contacts--phone">
+            <div class="header-top__contacts-phone--icon" data-da=".navbar, 991, 1">
+              <a href="tel:84959373710">
+                <img src="./images/phone-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="header-top__contacts-phone--numbers">
+              +7(495)937-37-10<br>+7(915)488-14-26
+            </div>
+          </div>
+        </div>
+        <div class="header-top__contacts">
+          <div class="header-top__contacts-mail">
+            <div class="header-top__contacts-mail--icon" data-da=".navbar, 991, 1">
+              <a href="mailto:info@toplivo-s.ru">
+                <img src="./images/send-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="header-top__contacts-mail-address">
+              <a href="mailto:info@toplivo-s.ru">Email: info@toplivo-s.ru</a>
+            </div>
+          </div>
+          <div class="header-top__contacts-delivery">
+            <div class="header-top__contacts-delivery--icon" data-da=".navbar, 991, 1">
+              <img src="./images/truck-icon.svg" alt="">
+            </div>
+            <div class="header-top__contacts-delivery-info">Доставка от 500 литров</div>
+          </div>
+        </div>
+
+        <div class="header-top__search">
+          <form action="">
+            <input type="text" placeholder="Поиск">
+            <button class="search-btn" type="submit"><img src="./images/search-icon.svg" alt=""></button>
+          </form>
+          <div class="header-top__search-order">
+            <a href="#" class="order-btn" data-toggle="modal" data-target="#exampleModal">Сделать заказ</a>
+          </div>
+        </div>
+
+        <div class="header-top__callback">
+          <div class="header-top__callback-button" data-da=".navbar-nav, 991, last">
+            <a href="#" class="callback-btn">Заказать звонок</a>
+          </div>
+          <div class="header-top__callback-wa">
+            <a href="" class="wa-btn">
+              <img src="./images/wa_white-icon.svg" alt="">
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="navbar-brand"></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">О компании</a>
+                <span class="menu_arrow arrow"></span>
+                <ul class="level-2">
+                  <li>
+                    <a href="#">Паспорта топлива</a>
+                  </li>
+                  <li>
+                    <a href="#">Сотрудничество</a>
+                  </li>
+                  <li>
+                    <a href="#">Вакансии</a>
+                  </li>
+                  <li>
+                    <a href="#">Нефтебазы</a>
+                  </li>
+                  <li>
+                    <a href="#">Напишите нам</a>
+                  </li>
+                  <li>
+                    <a href="#">Новости</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Доставка</a>
+                <span class="menu_arrow arrow"></span>
+                <ul class="level-2">
+                  <li>
+                    <a href="#">В коттеджи</a>
+                  </li>
+                  <li>
+                    <a href="#">Для котельной</a>
+                  </li>
+                  <li>
+                    <a href="#">На строительные объекты</a>
+                  </li>
+                  <li>
+                    <a href="#">Доставка бензовозом</a>
+                  </li>
+                  <li>
+                    <a href="#">Доставка в бочках</a>
+                  </li>
+                  <li>
+                    <a href="#">Керосин в бочках</a>
+                  </li>
+                  <li>
+                    <a href="#">На склады</a>
+                  </li>
+                  <li>
+                    <a href="#">Для генераторов</a>
+                  </li>
+                  <li>
+                    <a href="#">Для водного транспорта</a>
+                  </li>
+                  <li>
+                    <a href="#">Для транспорта</a>
+                  </li>
+                  <li>
+                    <a href="#">На мини АЗС</a>
+                  </li>
+                  <li>
+                    <a href="#">В автосервисы</a>
+                  </li>
+                  <li>
+                    <a href="#">Для котлов отопления</a>
+                  </li>
+                  <li>
+                    <a href="#">Для тракторов</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Цены</a>
+                <span class="menu_arrow arrow"></span>
+                <ul class="level-2">
+                  <li>
+                    <a href="#">Зимнее дизельное топливо</a>
+                  </li>
+                  <li>
+                    <a href="#">Летнее дизельное топливо</a>
+                  </li>
+                  <li>
+                    <a href="#">Дизельное топливо: Евро-3, Евро-4 и Евро-5</a>
+                  </li>
+                  <li>
+                    <a href="#">Евро-3</a>
+                  </li>
+                  <li>
+                    <a href="#">Евро-4</a>
+                  </li>
+                  <li>
+                    <a href="#">Евро-5</a>
+                  </li>
+                  <li>
+                    <a href="#">Евро-5 сорт F</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Услуги</a>
+                <span class="menu_arrow arrow"></span>
+                <ul class="level-2">
+                  <li>
+                    <a href="#">Откачка</a>
+                  </li>
+                  <li>
+                    <a href="#">Утилизация</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Отзывы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Статьи</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="first-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 col-sm-12 col-md-7">
+          <h1 class="main-title">Сайт рыбатекст поможет дизайнеру, верстальщику</h1>
+          <p class="main-subtitle">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать</p>
+        </div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-12 col-sm-4 col-md-3">
+          <h4 class="form-title text-center mb-3">Оставьте заявку прямо сейчас!</h4>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" aria-describedby="" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="" placeholder="Телефон: *">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="4">Сообщение</textarea>
+            </div>
+            <button type="submit" class="main-btn">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fuels">
+    <div class="container">
+      <div class="row fuel-h">
+        <div class="col-12 col-md-3 align-self-start">
+          <div class="type_fuel mb-3 mx-auto" style="background-image: url(./images/type-1.png);">
+            <div class="type">Евро 5</div>
+            <a href="#" class="order-fuel">Заказать</a>
+            <div class="price-fuel">от 32 000 рублей</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 align-self-center">
+          <div class="type_fuel mb-3 mx-auto" style="background-image: url(./images/type-2.png);">
+            <div class="type">Керосин</div>
+            <a href="#" class="order-fuel">Заказать</a>
+            <div class="price-fuel">от 32 000 рублей</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 align-self-end">
+          <div class="type_fuel mx-auto" style="background-image: url(./images/type-3.png); padding-top: 50px;">
+            <div class="type">Печное<br>Топливо</div>
+            <a href="#" class="order-fuel">Заказать</a>
+            <div class="price-fuel">от 32 000 рублей</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="second-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 col-md-7">
+          <div class="second-section__box">
+            <h3 class="section-title">Доставка дизельного топлива на объекты</h3>
+            <p class="section-info">
+              ООО «ТСС-ОЙЛ» осуществляет поставку, реализацию нефтепродуктов. Купить дизельное топливо у нас можно
+              вместе с доставкой по привлекательной цене. Собственный автопарк позволяет осуществлять поставку
+              дизельного топлива по Москве и области.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5"></div>
+        <div class="col-12 col-md-5">
+          <h3 class="section-title__white">Основные потребители дизтоплива</h3>
+          <div class="section-info__white mb-3">
+            Без дизельного топлива не сможет работать не только автотранспорт, но и специальная техника. Отопление
+            частных домов, коттеджей происходит тоже благодаря ему. Бесперебойная работа генераторов возможна только при
+            своевременной заправке дизелем. Железнодорожный, водный транспорт функционирует за счет солярки.
+          </div>
+          <div class="section-info__white">
+            Сотрудничая с нашей компанией, вы можете быть уверены, что вся продукция проверенная и сертифицированная,
+            имеет паспорта качества. Купить дизтопливо у нас можно по низкой цене.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">С нами удобно и выгодно работать</h2>
+      <div class="row justify-content-center align-items-baseline">
+        <div class="col-12 col-sm-6 col-md-2">
+          <div class="card">
+            <img class="card-img-top" style="width: 72px;" src="./images/park.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">Собственный автопарк</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2">
+          <div class="card">
+            <img class="card-img-top" style="width: 46px;" src="./images/wallet.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">Разумные цены</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2">
+          <div class="card">
+            <img class="card-img-top" style="width: 55px;" src="./images/users.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">Без посредников</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2">
+          <div class="card">
+            <img class="card-img-top" style="width: 94px;" src="./images/stars.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">Опыт более 9 лет</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="form-order">
+    <div class="container">
+      <h3>Готовы заказать? Есть вопросы?</h3>
+      <form>
+        <div class="form-group">
+          <input type="phone" class="form-control" id="phone_1" placeholder="+7(___) ___-__-__">
+        </div>
+        <button type="submit" class="form-btn">Оставить заявку</button>
+      </form>
+      <p class="text-center">Мы рады ответить на все вопросы и подобрать лучший для Вас вариант!</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Мы поставляем топливо</h2>
+      <div class="row justify-content-center mb-3">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="fuel mb-3 mr-auto ml-auto">
+            <img src="./images/fuel-1.png" alt="">
+            <div class="fon"></div>
+            <div class="fuel-info">Морские<br>и речные суда</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="fuel mb-3 mr-auto ml-auto">
+            <img src="./images/fuel-2.png" alt="">
+            <div class="fon"></div>
+            <div class="fuel-info">Тепловозы</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="fuel mb-3 mr-auto ml-auto">
+            <img src="./images/fuel-3.png" alt="">
+            <div class="fon"></div>
+            <div class="fuel-info">Военная техника</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="fuel mb-3 mr-auto ml-auto">
+            <img src="./images/fuel-4.png" alt="">
+            <div class="fon"></div>
+            <div class="fuel-info">Сельскохозяйственная<br>техника </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="fuel mb-3 mr-auto ml-auto">
+            <img src="./images/fuel-5.png" alt="">
+            <div class="fon"></div>
+            <div class="fuel-info">Грузовые автомобили</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="fuel mb-3 mr-auto ml-auto">
+            <img src="./images/fuel-6.png" alt="">
+            <div class="fon"></div>
+            <div class="fuel-info">Склады</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="fuel mb-3 mr-auto ml-auto">
+            <img src="./images/fuel-7.png" alt="">
+            <div class="fon"></div>
+            <div class="fuel-info">Дизельные<br>электрогенераторы</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="fuel mb-3 mr-auto ml-auto">
+            <img src="./images/fuel-8.png" alt="">
+            <div class="fon"></div>
+            <div class="fuel-info">Котельное топливо</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="advantages">
+    <div class="container">
+      <div class="row advantages-box">
+        <div class="col-12 col-sm-9">
+          <h2 class="section-title__white">Преимущества работы с нашей компанией</h2>
+          <div class="advantages-info">
+            Современные автомобили очень чувствительны к заправляемому горючему. Некачественный дизель приводит к
+            преждевременному выходу из строя деталей машины. Поэтому особое внимание уделяется качеству топлива. Наша
+            компания реализует только сертифицированный товар, отвечающий действующим в РФ ГОСТам. Предоставим паспорта
+            качества. Топливо будет соответствовать заявленным параметрам.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="list-advantages">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-12 col-sm-12 col-md-1296 col-lg-6 col-xl-6 px-0">
+          <img src="./images/manhand.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-12 col-md-1296 col-lg-6 col-xl-5">
+          <div class="list-advantage">
+            <div class="list-advantage__title">Обратившись в нашу фирму, покупатель получит ряд преимуществ по сравнению
+              с конкурентами</div>
+            <ul>
+              <li>Доставка дизтоплива происходит строго в указанное заказчиком время</li>
+              <li>Солярка только высокого качества. Все присадки содержатся в допустимых концентрациях</li>
+              <li>Исключено содержание механических включений, добавление кислот, щелочей, воды</li>
+              <li>Экономия на стоимости нефтепродуктов, доставке. Мы оказываем комплексную услугу, включающую продажу и
+                доставку горючего. Тем самым покупатель существенно экономит денежные средства</li>
+              <li>Большой ассортимент. В наличие есть летнее и зимнее дизтопливо. Горючее марок Е, F, С, СМТ для судов
+              </li>
+              <li>Осуществляем проверку качества товара</li>
+              <li>Предлагаем скидки для оптовых и постоянных клиентов. Цена будет зависеть от объема поставки</li>
+              <li>Работаем с известными, проверенными поставщиками нефти. Рязанский НПК, Московский НПЗ, Ярославский НПЗ
+                – наши постоянные партнеры</li>
+              <li>Возможность крупнооптовой поставки, так и продажа дизтоплива небольшими партиями.</li>
+              <li>Многолетний опыт работы. Работаем в этой области уже не один год</li>
+              <li>Проверенные специалисты. У нас трудятся только профессионалы, имеющие профильное образование и
+                многолетний стаж</li>
+              <li>Удобный вариант взаиморасчетов. Оплата может быть осуществлена как наличными деньгами, так и безналом
+              </li>
+            </ul>
+            <div class="list-advantage__info">
+              Для экономии заказчиков возможно осуществление самовывоза продукции собственным автотранспортом. При
+              заказе от 500 литров, рекомендуем воспользоваться нашей транспортировкой.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="process">
+    <div class="container">
+      <h2 class="section-title__white">Процедура оформления заказа</h2>
+      <p class="section-subtitle">Мы специализируемся на продаже солярки только высокого качества.</p>
+      <h2 class="section-title__white">Как происходит работа?</h2>
+      <p class="process-info">
+        Чтобы заказать дизельное топливо, <span>звоните по телефону указанному на сайте, отправляйте заявку по
+          электронной почте.</span> Возможно, <span>оставить запрос в форме, расположенной внизу
+          интернет-страницы.</span></p>
+      <p class="process-info">
+        Если ваши запасы на исходе, не тяните время, <span>заказывайте дизтопливо у нас.</span></p>
+      <p class="process-info">
+        Мы работаем <span>24 часа в сутки без выходных и праздников.</span></p>
+      <div class="row hight-block">
+        <div class="col-12 col-sm-6 col-md-3 px-0 align-self-start mb-4">
+          <div class="process-item">
+            <img src="./images/proc-1.png" alt="">
+            <span>Приём заявки</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 px-0 align-self-center mb-4">
+          <div class="process-item">
+            <img src="./images/proc-2.png" alt="">
+            <span>Доставка дизтоплива до объекта</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 px-0 align-self-end mb-4">
+          <div class="process-item">
+            <img src="./images/proc-3.png" alt="">
+            <span>Слив по счетчику</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 px-0 align-self-start">
+          <div class="process-item">
+            <img src="./images/proc-4.png" alt="">
+            <span>Выставление документов</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="customers">
+    <div class="container">
+      <h2 class="section-title">Наши заказчики</h2>
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <p class="customers-info">
+            Клиентами ООО «ТСС-ОЙЛ» являются российские лидеры на строительном, сельскохозяйственном рынке. Поставляем
+            продукцию в железнодорожные компании, в автокомпании, в судостроительные концерны. АЗС приобретают горючее в
+            нашей фирме.
+          </p>
+          <p class="customers-info">
+            Работаем с физическими лицами. Купить солярку может как юридическая фирма, так и частное лицо.
+          </p>
+          <p class="customers-info">
+            Для каждого клиента находим индивидуальный подход. Мы ценим каждого заказчика. Организуем акции и скидки для
+            новых и постоянных покупателей.
+          </p>
+          <p class="customers-info">
+            Доверие клиентов, постоянные заказчики – это критерии нашей работы. Мы стараемся усовершенствовать наш
+            сервис, чтоб все было удобно для покупателя.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="partners">
+    <div class="container">
+      <h2 class="section-title">Наши партнеры</h2>
+    </div>
+    <div class="slider">
+      <div class="slide"><img src="./images/slide-1.png" alt=""></div>
+      <div class="slide"><img src="./images/slide-2.png" alt=""></div>
+      <div class="slide"><img src="./images/slide-3.png" alt=""></div>
+      <div class="slide"><img src="./images/slide-4.png" alt=""></div>
+      <div class="slide"><img src="./images/slide-5.png" alt=""></div>
+      <div class="slide"><img src="./images/slide-6.png" alt=""></div>
+    </div>
+  </section>
+
+  <section class="passports">
+    <div class="container">
+      <h2 class="section-title">Паспорта топлива</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-3 mb-3 text-center">
+          <img src="./images/pass-1.png" alt="">
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3 text-center">
+          <img src="./images/pass-2.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="reviews">
+    <div class="container">
+      <h2 class="section-title__white">Отзывы</h2>
+      <div class="row align-items-stretch mb-2">
+        <div class="col-12 col-md-4 mb-3">
+          <div class="review-item">
+            <h5 class="review-author">Вяземский Михаил, <span>01.09.2018</span></h5>
+            <p class="review-text">
+              Спасибо компании "ТСС-ОЙЛ" за доставку дизтоплива для котла "Бизон 35 NL". Обычно он работает у меня на
+              газе, но из-за ремонта распределительного узла подача газа упала до минимума. Чтобы не остаться без
+              горячей воды и в холоде (по ночам всё равно прохладно, так что приходится как-то обогреваться)...
+            </p>
+            <a href="#" class="read_more">Читать далее</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="review-item">
+            <h5 class="review-author">Саминов Артур, <span>11.09.2018</span></h5>
+            <p class="review-text">
+              Заказываю в ООО "ТСС-ОЙЛ" дизельное топливо (летнее и зимнее) для дозаправки котла Buderus. Раз котёл
+              работает без сбоев и аварий, значит, солярка хорошая. В принципе, об этом можно судить и без документов,
+              которые всякий раз привозят. Поставщик этот импонирует своими довольно доступными...
+            </p>
+            <a href="#" class="read_more">Читать далее</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+          <div class="review-item">
+            <h5 class="review-author">Таратухин Владислав, <span>03.10.2018</span></h5>
+            <p class="review-text">
+              Заказываю в ООО "ТСС-ОЙЛ" дизельное топливо (летнее и зимнее) для дозаправки котла Buderus. Раз котёл
+              работает без сбоев и аварий, значит, солярка хорошая. В принципе, об этом можно судить и без документов,
+              которые всякий раз привозят. Поставщик этот импонирует своими довольно доступными...
+            </p>
+            <a href="#" class="read_more">Читать далее</a>
+          </div>
+        </div>
+      </div>
+      <p class="reviews-order mb-5">
+        Мы принимаем Ваши заказы по телефону: <a class="review-phone" href="tel:+74959373710">+7(495) 937-37-10</a>
+      </p>
+      <a href="#" class="review-link">Оставить заявку</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-menu mb-5">
+      <div class="container">
+        <div class="header-menu">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="navbar-brand"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav2">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">О компании</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Доставка</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Цены</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Статьи</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <div class="header-top__contacts-location">
+            <div class="header-top__contacts-location--icon">
+              <a href="#">
+                <img src="./images/location-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="header-top__contacts-location--address">
+              г. Москва<br>ул. Люберецкий пр-д дом 2
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <div class="header-top__contacts-mail">
+            <div class="header-top__contacts-mail--icon">
+              <a href="mailto:info@toplivo-s.ru">
+                <img src="./images/send-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="header-top__contacts-mail-address">
+              <a href="mailto:info@toplivo-s.ru">Email: info@toplivo-s.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <div class="header-top__contacts-delivery">
+            <div class="header-top__contacts-delivery--icon">
+              <img src="./images/truck-icon.svg" alt="">
+            </div>
+            <div class="header-top__contacts-delivery-info">Доставка от 500 литров</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <div class="header-top__contacts--phone">
+            <div class="header-top__contacts-phone--icon">
+              <a href="tel:84959373710">
+                <img src="./images/phone-icon.svg" alt="">
+              </a>
+            </div>
+            <div class="header-top__contacts-phone--numbers">
+              +7(495)937-37-10<br>+7(915)488-14-26
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="callback-btn">Заказать звонок</a>
+      <p class="copyright text-center">© 2012 - 2020 ООО «ТСС-ОЙЛ»</p>
+      <a href="" class="map-link text-center">Карта сайта</a>
+    </div>
+  </footer>
+
+
+  <div id="scrollToUp-btn">
+    <img src="./images/aroow-up.png" alt="">
+  </div>
+
+  <div id="wa-btn__mobile">
+    <a href="#"><img src="./images/wa_white-icon.svg" alt=""></a>
+  </div>
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <h5 class="modal-title text-center mb-3" id="exampleModalLabel">Сделать заказ</h5>
+        <p class="modal-info text-center mb-4">Заполнение формы займет не более 1 минуты.</p>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-3 col-form-label">Ваше имя <span
+                  style="color:red;">*</span></label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="Как к Вам обращаться?" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword3" class="col-sm-3 col-form-label">Ваш телефон <span
+                  style="color: red;">*</span></label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputPassword3"
+                  placeholder="Мы свяжемся с Вами для подтверждения заказа" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-3" for="exampleFormControlTextarea1">Комментарий</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" id="exampleFormControlTextarea1"
+                  rows="4">Укажите, какая продукция Вас интересует</textarea>
+              </div>
+            </div>
+            <p class="modal-info text-center">Наш оператор свяжется с Вами в течении 15 минут</p>
+            <div class="form-group row justify-content-center">
+              <button type="submit" class="modal-btn">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="libs/bootstrap.min.js"></script>
+  <script src="libs/dynamicAdapt.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+    type="text/javascript"></script>
+  <script src="scripts/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#phone_1").mask("+7(999) 999-99-99");
+    });
+  </script>
+</body>
+
+</html>
